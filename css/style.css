@@ -3,9 +3,9 @@
 
 * {
     box-sizing: border-box;
-    margin:0;
     padding:0;
-}
+    margin:0;
+    }
 
 #mas{
     background-color:#00669F;
@@ -41,64 +41,45 @@ h1.home{
     color: white;
     font-family: "Roboto", sans-serif;
     font-weight:400;
-    padding-left: 1%;
-    font-weight:normal;
-   
+    padding-left: 1%;   
 }
-h1.formularios{
-    display: inline-block;
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-weight:400;
-    vertical-align: 80%;
-    font-size: 28px;
-   
-}
-.compu{
-    width: 6em;
-}
+
 .contenedor{
     background-color: #001D2D;
+    padding-bottom: 0.5%; 
     padding-left: 80%;
     padding-top: 0.5%;
-    padding-bottom: 0.5%;
-    
 }
+
 .botones{
-    display:inline-block;
     color:white;
+    display:inline-block;
+    font-family: "Roboto", sans-serif;
     margin-left: 3%;
     margin-right: 3%;
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
 }
 
 section{
-    padding-top: 150px;
     padding-bottom: 150px;
+    padding-top: 150px;
 }
 .card{
-    
     background-color: #F3F3F3;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     left:13%;
     padding-bottom: 8%;
     position:absolute;
     width: 22%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
 }
-.superman{
-    left:65%;
+.bat{
+    background-image: url(../img/bg-batman.jpg);
 }
-.maravilla{
-    left:39%;
-}
-
 .card div img{
     border-radius: 50%;
     bottom: 55%;
     left: 30%;
-    
     position: absolute;
     width:8em;
 }
@@ -112,34 +93,42 @@ section{
     text-transform: uppercase;
 }
 
-
 .card div p{
-    text-align: justify;
     font-family: "Roboto", sans-serif;
     font-size: 17px;
     font-weight:400;
     padding:8% 3% 4%;
+    text-align: justify;
     vertical-align:auto;
-  
 }
-.maravilla div p{
-   word-spacing: 1px;
+.card div a{
+    background-color:#00669F;
+    border-radius: 2px;
+    bottom:3%;
+    color:white;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight:400;
+    left:28%;
+    padding:5% 13%;
+    position:absolute;
+    text-decoration: none;  
 }
 
-.iconos{
-    color:red;
-    font-size: 26px;
-    left:7%;
-    position: absolute;
-    top:11%;
-}
-
-.bat{
-    background-image: url(../img/bg-batman.jpg);
+.maravilla{
+    left:39%;
 }
 
 .wonder{
     background-image: url(../img/bg-wonderw.jpg);
+}
+.maravilla div p{
+    word-spacing: 1px;
+ }/*Hice separacion de letras porque como hay menos texto que en las otras cards,
+ tenia menos renglones y por lo tanto quedaba de distinto tamaño la tarjeta*/
+
+.superman{
+    left:65%;
 }
 
 .super{
@@ -156,18 +145,12 @@ section{
     width: 100%;
 }
 
-.verMas{
-    background-color:#00669F;
-    border-radius: 2px;
-    bottom:3%;
-    color:white;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight:400;
-    left:28%;
-    padding:5% 13%;
-    position:absolute;
-    text-decoration: none;  
+.iconos{
+    color:red;
+    font-size: 26px;
+    left:7%;
+    position: absolute;
+    top:11%;
 }
 
 footer.cards{
@@ -175,8 +158,8 @@ footer.cards{
     color:white;
     font-size: 20px;
     padding:2%;
-    text-align:center;
     position:absolute;
+    text-align:center;
     width:100%;
     margin-top:42%;
 }
@@ -185,6 +168,3 @@ span {
     text-transform: uppercase;
 }
 
-input{
-    display:block;
-}
