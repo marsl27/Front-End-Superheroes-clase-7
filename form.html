@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadi tu super</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="descuento">
+        <p>
+            20% de Descuento en todos los productos!
+        </p>
+    </div>
+    <header class="formularios">
+        <img class="compu" src="img/img compu.png" alt="icono">
+        <h1 class="formularios">Nombre tienda</h1>
+
+    </header>
+    <div class="contenedor">
+        <a class="botones" href="contacto.html" target="_blank">Contacto</a>
+        <a class="botones" href="registro.html" target="_blank">Registrarme</a>
+        <a class="botones" href="login.html" target="_blank">Ingresar</a>
+    </div>
+    <main>
+        <div class="fondo">
+            <h3>Añadí tu super!</h3>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
+            <form>
+                <div class="dosColumnas uno" >
+                    <label for="nombre">*Nombre</label>
+                    <input type="text" id="nombre" name="nombre" minlength="5" maxlength="25" required>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="nacimiento" min="1999-01-01" max="2021-12-12">
+                    <textarea placeholder="Descripción"></textarea>
+                </div>
+                <div class="dosColumnas">
+                    <label for="especie" >*Especie</label>
+                    <select name="especie" id="especie" required>
+                        <option class="gris" disabled selected>Especie</option>
+                        <option value="Murciélago">Murciélago</option>
+                        <option value="Arácnido">Arácnido</option>
+                        <option value="Roedor">Roedor</option>
+                        <option value="Ave">Ave</option>
+                    </select>  
+                    <label id="foto" for="Foto">Agregar una foto<input type=file id="Foto" name="Foto"></label>
+                    
+
+                    <p>Poderes</p> 
+
+                        <label for="Poderes1"><input type="checkbox" id="Poderes1" name="Poderes" value="Volar">Volar</label> 
+                        <label for="Poderes2"><input type="checkbox" id="Poderes2" name="Poderes" value="Superinteligencia">Superinteligencia</label> 
+                        <label for="Poderes3"><input type="checkbox" id="Poderes3" name="Poderes" value="Vista de rayo láser">Vista de rayo láser</label> 
+                        <label for="Poderes4"><input type="checkbox" id="Poderes4" name="Poderes" value="Billetera gorda">Billetera gorda</label> 
+
+                    <p>Tipo de personaje</p>
+
+                    
+                    
+                    <label for="Tipo Personaje" class="vert"><input type="radio" id="Tipo" name="Tipo Personaje" value="Heroe/heroina">Heroe/Heroína</label>
+                    <label for="Tipo Personaje"> <input type="radio" id="Tipo" name="Tipo Personaje" value="Villano/Villana">Villano/Villana</label>
+                </div>
+                <input id="boton" type="submit" value="Añadir">
+            </form>
+        </div>
+    </main>
+    <footer class="formularios">
+        <p>Todos los derechos reservados a <span>front end i</span></p>
+    </footer>
+</body>
+
+</html>
