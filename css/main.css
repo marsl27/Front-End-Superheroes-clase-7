@@ -1,0 +1,300 @@
+/*Sección correspondiente a las 3 cards. Le doy padding superior e inferior para que esten
+centradas verticalmente*/
+section{
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+
+/*Div principal de los formularios que contiene el h2 y el form*/
+div.formularios{
+    margin:0 auto;
+    margin-bottom: 15%;
+    margin-top:15%;
+    width: 33%;
+}
+
+/*Div principal del form que que está linkeado al más*/
+div.fondo{
+    background-color:#00669F;
+    border-radius: 40px;
+    margin:0 auto;
+    margin-bottom: 15%;
+    margin-top:15%;
+    width:75%;
+}
+
+/*Clase que aplica a todas las cards*/
+.card{
+    background-color: #F3F3F3;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    left:13%;
+    padding-bottom: 8%;
+    position:absolute;
+    transition: scale, 850ms;
+    width: 22%;
+}
+
+/*Utilicé esto para que las cards se ubiquen horizontalmente*/
+.maravilla{
+    left:39%;
+}
+.superman{
+    left:65%;
+}
+
+/*Pseudoclase de las cards, para acercarlas cuando posicionamos el cursor*/
+.card:hover{
+    transform:scale(1.15);
+}
+
+/*Fotos de portada de las cards*/
+.bat{
+    background-image: url(../img/bg-batman.jpg);
+}
+.super{
+    background-image: url(../img/bg-superman.jpg);
+}
+.wonder{
+    background-image: url(../img/bg-wonderw.jpg);
+}
+
+/*Posición de las fotos de portada*/
+.super,.wonder,.bat{
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding:100px;
+    /*La position relative es para hacer de contenedor de los íconos de corazón*/
+    position:relative;
+}
+
+/*Formato íconos de corazón. Se le da como si fuese una fuente*/
+.iconos{
+    color:red;
+    font-size: 26px;
+    left:7%;
+    position: absolute;
+    top:11%;
+}
+
+/*Clase correspondiente a las imágenes de perfil de las cards*/
+.card div img{
+    border-radius: 50%;
+    bottom: 55%;
+    left: 30%;
+    position: absolute;
+    width:8em;
+}
+
+/*Clase correspondiente a los h2 de las cards (nombre de los superheroes)*/
+.card div h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight:400;
+    padding-top: 20%;
+    text-align: center;
+    /*Transforma en mayuscula*/
+    text-transform: uppercase;
+}
+
+/*h2 de los formularios*/
+.formularios h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 4%;
+    text-align: left;
+}
+
+/*h3 y parrafo del archivo form.html. Están juntos porque comparten estilos*/
+.fondo h3, .fondo p{
+    color:white;
+    font-family: 'Inter', sans-serif;
+    padding: 1% 0;
+    text-align: center;
+    
+}
+
+/*El tamaño de la letra de ambos (h3 y p) es distinto asi que los separé*/
+.fondo h3{
+    font-size: 35px;
+}
+.fondo p{
+    font-size: 22px;
+}
+
+/*Etiqueta form del archivo form.html*/
+.fondo form{
+    margin:1% 8%;
+    width:85%;
+}
+
+/*div´s de adentro del form del archivo form.html, para dividirlo en dos 
+columnas que queden una al lado de la otra*/
+.dosColumnas{
+    display: inline-block;
+    width:49%;
+}
+
+/*div correspondiente a la columna de la izquierda.
+Lo uso para hacer un espacio entre las dos columnas*/
+.uno{
+    margin-right: 1%;
+}
+
+/*Clase correspondiente a los párrafos de las cards (descripción de los superheroes)*/
+.card div p{
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight:400;
+    padding:8% 6% 4%;
+    text-align: justify;
+}
+
+/*Formato de fuente correspondiente a label y p del archivo form.html*/
+.dosColumnas label,.dosColumnas p{
+    color:white;
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    font-weight: 100;
+    margin-bottom: 2%;
+    margin-top: 13%;
+    padding-right: 20%;
+    text-align: left;
+}
+
+/*Campos de los formularios*/
+input, select, textarea{
+    margin:2% 0;
+    padding:2%;
+    width:100%;
+}
+
+/*Campos del formulario correspondiente al archivo form.html, por ser distinto a los
+campos de los otros formularios*/
+.dosColumnas label, .dosColumnas input, .dosColumnas textarea, .dosColumnas select{
+    border-radius: 15px;
+    display: inline-block;
+    margin:3% 0;
+}
+
+/*Campo de fecha y descripción del form.html, para sacarle el borde y hacerlo mas alto*/
+.dosColumnas input[type=text],.dosColumnas input[type=date]{
+    border: solid 1px #00669F;
+    padding:6.5%;
+}
+
+/*Campo descripcion del form.html*/
+.dosColumnas textarea{
+    /*Para acomodar el campo*/
+    margin-top: 10%;
+    margin-bottom: 0;
+    /*Para acomodar la palabra "descripcion" dentro del campo*/
+    padding:3% 0 87% 3%;
+}
+
+/*Textarea del formulario contacto*/
+.formularios textarea{
+    padding:15%;
+}
+
+/*Campo de especie, cuyo alto tiene que ser mas chico que los anteriores porque ocupa
+espacio la palabra "especie"*/
+.dosColumnas select {
+    padding:5.6%;
+}
+
+/*Formato de las palabras "descripción" y "especie"*/
+textarea::placeholder, .dosColumnas select{
+    color:grey;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+}
+
+/*Fondo gris en los campos cuando se hace click*/
+input:focus, select:focus, textarea:focus {
+    background-color: rgb(204, 202, 202);
+}
+
+/*Campo de agregar un archivo del form.html, para separarlo del label*/
+.dosColumnas input[type=file]{
+    margin-top: 13%;
+}
+
+/*Para que los checkbox y radiobutton estén al lado de las opciones*/
+.dosColumnas input[type=checkbox], .dosColumnas input[type=radio]{
+    display: inline-block;
+    /*Para hacerlos mas grandes*/
+    transform: scale(1.5);
+    width:50px;
+}
+
+/*"Ver más" que se encuentra al final de las cards*/
+.card div a{
+    background-color:#00669F;
+    border-radius: 2px;
+    bottom:3%;
+    color:white;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight:400;
+    left:28%;
+    padding:5% 13%;
+    position:absolute;
+    text-decoration: none;  
+}
+
+/*Botones de los formularios*/
+input[type=submit], input[type=reset]{
+    background-color: #1CD1B0;
+    border: solid #1CD1B0 1px;
+    border-radius: 20px;
+    display:inline-block;
+    font-weight: bold;
+    margin:7% 1.9% 0;
+    width:45%;
+    transition:background-color,850ms; 
+}
+
+/*Botón resetear. Se hace aparte porque cambia de color.*/
+input[type=reset]{
+    background-color: #888888;
+    border: solid #888888 1px;
+    color:white;
+}
+
+/*Botón del form.html*/
+#boton{
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin:4% 20% 3%;
+    width: 60%;
+}
+
+/*Botón de login.html que es más ancho*/
+input.ancho{
+    width:96%;
+}
+
+input[type=submit]:hover, input[type=reset]:hover{
+    background-color: rgb(46, 45, 45);
+    color:white;
+    border: solid rgb(46, 45, 45) 1px;
+}
+
+/*Frase posterior a los botones*/
+.formularios form p{
+    margin-top: 4%;
+    text-align: center;
+}
+.formularios form p a{
+    color:#4F95BD;
+    text-decoration: none; 
+}
+
+

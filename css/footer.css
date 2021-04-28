@@ -1,0 +1,15 @@
+/*Footer*/
+footer.cards{
+    background-color:#00669F;
+    color:white;
+    font-size: 20px;
+    padding:2%;
+    text-align:center;
+    /*Para que no quede detrás de las cards*/
+    margin-top:42%;
+}
+
+/*Para darle mayúscula a una parte del footer*/
+span {
+    text-transform: uppercase;
+}

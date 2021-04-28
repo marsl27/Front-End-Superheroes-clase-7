@@ -1,16 +1,25 @@
+/*Importación de fuentes*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
-@import "form.css";
 
-* {
+/*Importación del css*/
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+
+
+/*Selector universal*/
+*{
     box-sizing: border-box;
     padding:0;
     margin:0;
-    }
+}
 
+/*Signo más*/
 #mas{
     background-color:#00669F;
     border-radius: 30px;
+    /*Para que esté en el medio de la pantalla*/
     bottom:40%;
     color:white;
     padding: 1%;
@@ -18,154 +27,6 @@
     right:2%;    
 }
 
-#descuento{
-    background-color:#1CD1B0;
-    font-family: "Roboto", sans-serif;
-    font-size: 25px;
-    font-weight: 400;
-    padding-left: 2%;
-    width:100%;
-}
 
 
-header{
-    background-color:#00669F;
-    font-size: 20px;
-    padding:1%;
-    position:sticky;
-    top: 0%;
-    z-index:99;    
-}
-
-
-h1.home{
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-weight:400;
-    padding-left: 1%;   
-}
-
-.contenedor{
-    background-color: #001D2D;
-    padding-bottom: 0.5%; 
-    padding-left: 80%;
-    padding-top: 0.5%;
-}
-
-.botones{
-    color:white;
-    display:inline-block;
-    font-family: "Roboto", sans-serif;
-    margin-left: 3%;
-    margin-right: 3%;
-    text-decoration: none;
-}
-
-section{
-    padding-bottom: 150px;
-    padding-top: 150px;
-}
-.card{
-    background-color: #F3F3F3;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    left:13%;
-    padding-bottom: 8%;
-    position:absolute;
-    width: 22%;
-}
-.bat{
-    background-image: url(../img/bg-batman.jpg);
-}
-.card div img{
-    border-radius: 50%;
-    bottom: 55%;
-    left: 30%;
-    position: absolute;
-    width:8em;
-}
-
-.card div h2{
-    font-family: "Roboto", sans-serif;
-    font-size: 24px;
-    font-weight:400;
-    padding-top: 20%;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.card div p{
-    font-family: "Roboto", sans-serif;
-    font-size: 17px;
-    font-weight:400;
-    padding:8% 3% 4%;
-    text-align: justify;
-    vertical-align:auto;
-}
-.card div a{
-    background-color:#00669F;
-    border-radius: 2px;
-    bottom:3%;
-    color:white;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight:400;
-    left:28%;
-    padding:5% 13%;
-    position:absolute;
-    text-decoration: none;  
-}
-
-.maravilla{
-    left:39%;
-}
-
-.wonder{
-    background-image: url(../img/bg-wonderw.jpg);
-}
-.maravilla div p{
-    word-spacing: 1px;
- }/*Hice separacion de letras porque como hay menos texto que en las otras cards,
- tenia menos renglones y por lo tanto quedaba de distinto tamaño la tarjeta*/
-
-.superman{
-    left:65%;
-}
-
-.super{
-    background-image: url(../img/bg-superman.jpg);
-}
-
-.super,.wonder,.bat{
-    background-repeat:no-repeat;
-    background-size: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding:100px;
-    position:relative;
-    width: 100%;
-}
-
-.iconos{
-    color:red;
-    font-size: 26px;
-    left:7%;
-    position: absolute;
-    top:11%;
-}
-
-footer.cards{
-    background-color:#00669F;
-    color:white;
-    font-size: 20px;
-    padding:2%;
-    position:absolute;
-    text-align:center;
-    width:100%;
-    margin-top:42%;
-}
-
-span {
-    text-transform: uppercase;
-}
 
