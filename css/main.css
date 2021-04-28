@@ -197,7 +197,7 @@ campos de los otros formularios*/
 
 /*Textarea del formulario contacto*/
 .formularios textarea{
-    padding:15%;
+    padding:2% 2% 30%;
 }
 
 /*Campo de especie, cuyo alto tiene que ser mas chico que los anteriores porque ocupa
